@@ -1,0 +1,112 @@
+/* Estilos personalizados para la sección hero */
+.hero-section {
+    /* Aquí puedes cambiar la URL de la imagen de fondo */
+    background-image: url('img/cancha.jpeg'); /* Placeholder para la imagen de fondo del héroe */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay oscuro para la sección hero */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+    z-index: -1;
+}
+
+/* Estilo para los títulos de sección */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Línea debajo de los títulos de sección */
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #3b82f6; /* Color azul de Tailwind */
+    border-radius: 2px;
+}
+
+/* Estilos para hacer la imagen de fondo responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        /* Puedes ajustar la altura para pantallas más pequeñas si es necesario */
+        height: 50vh; 
+    }
+}
+
+/* --- BOTÓN FLOTANTE DE WHATSAPP --- */
+.whatsapp-flotante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Asegura que no haya subrayado en el enlace */
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Ajuste del botón de WhatsApp para pantallas pequeñas */
+@media (max-width: 768px) {
+    .whatsapp-flotante {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+/* Nuevos estilos de fondo degradado para las secciones */
+#nosotros {
+    background: linear-gradient(to right, #46506a, #e0e7ff); /* Azul muy claro a un azul ligeramente más oscuro */
+}
+
+#actividades {
+    background: linear-gradient(to right, #f0fdf4, #2e6441); /* Verde muy claro a un verde ligeramente más oscuro */
+}
+
+#docentes {
+    background: linear-gradient(to right, #f1e4b3, #4b4323); /* Amarillo muy claro a un amarillo ligeramente más oscuro */
+}
+
+#galeria {
+    background: linear-gradient(to right, #f3d0d0, #471b1b); /* Rojo muy claro a un rojo ligeramente más oscuro */
+}
+
+#ubicacion {
+    background: linear-gradient(to right, #cbdcf4, #1e2f44); /* Otro azul muy claro a un azul ligeramente más oscuro */
+}

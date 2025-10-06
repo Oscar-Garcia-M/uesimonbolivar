@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMON BOLIVAR</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="text-gray-800">
+
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#inicio" class="text-2xl font-bold text-red-600">UNIDAD EDUCATIVA<span class="text-gray-700"> SIMON BOLIVAR</span></a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#inicio" class="text-gray-600 hover:text-red-600 transition duration-300">INICIO</a>
+                <a href="#nosotros" class="text-gray-600 hover:text-red-600 transition duration-300">NOSOTROS</a>
+                <a href="#actividades" class="text-gray-600 hover:text-red-600 transition duration-300">ACTIVIDADES CURRICULARES</a>
+                <a href="#docentes" class="text-gray-600 hover:text-red-600 transition duration-300">DOCENTES</a>
+                <a href="#galeria" class="text-gray-600 hover:text-red-600 transition duration-300">GALERÍA</a>
+                <a href="#ubicacion" class="text-gray-600 hover:text-red-600 transition duration-300">UBICACIÓN</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#inicio" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">INICIO</a>
+            <a href="#nosotros" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">NOSOTROS</a>
+            <a href="#actividades" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">ACTIVIDADES CURRICULARES</a>
+            <a href="#docentes" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">DOCENTES</a>
+            <a href="#galeria" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">GALERÍA</a>
+            <a href="#ubicacion" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">UBICACIÓN</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== INICIO (HERO SECTION) ========== -->
+        <section id="inicio" class="hero-section text-white h-[60vh] md:h-[80vh] flex items-center">
+            <div class="container mx-auto px-6 text-center">
+            <center><img src="img/LOGO SIN FONDO SIMON BOLIVAR.png" width="300px" height="300px" alt=""></center>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">EN LA CIMA DEL CONOCIMIENTO</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Por Simpre Simón Bolivar</p>
+                
+            </div>
+        </section>
+
+        <!-- ========== NOSOTROS ========== -->
+        <section id="nosotros" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Sobre Nosotros</h2>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="img/cancha.jpeg" alt="Imagen del equipo o instalaciones" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Misión</h3>
+                        <p style="text-align: justify;">
+                            Diseñar y mantener una página web institucional que brinde información clara, accesible y actualizada sobre la unidad educativa, facilitando la comunicación entre estudiantes, padres de familia, docentes y la comunidad, promoviendo el uso de la tecnología como apoyo al aprendizaje.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Visión</h3>
+                        <p style="text-align: justify;">
+                           Ser una plataforma digital innovadora y confiable que represente la identidad de la unidad educativa, fortaleciendo la transparencia, la participación y la integración de la comunidad educativa, posicionándonos como un referente en el uso de recursos tecnológicos para la educación. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ACTIVIDADES CURRICULARES ========== -->
+        <section id="actividades" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Actividades Curriculares</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Actividad 1 -->
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/EJERCICIO.jpeg" class="w-full h-48 object-cover" alt="Actividad de Programación">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">EDUCACION FISICA Y DEPORTE</h3>
+                            <p style="text-align: justify;" class="text-gray-600">
+                                Esta disciplina pedagogica, busca el desarrollo integral para los estudiantes
+                                a travez del movimiento corporal, promoviendo la salud y el bienestar, 
+                                asi tambien como la disciplina y el trabajo en equipo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Actividad 2 -->
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/BANDA (2).jpeg" class="w-full h-48 object-cover" alt="Actividad de Redes">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">BANDA DE GUERRA</h3>
+                            <p style="text-align: justify;" class="text-gray-600">
+                                Las bandas de las U.E. son agrupaciones musicales comformadas por estudiantes que, 
+                                mediante instrumento de viento, percusion y wuaripoleras, representan al colegio en actos civicos, culturales y deportivos. Ademas de fomentar la disciplina y el trabajo en equipo fortalece la identidad institucional y el sentido de pertenencia. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Actividad 3 -->
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/COMPUTACION.jpeg" class="w-full h-48 object-cover" alt="COMPUTACION">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">COMPUTACION</h3>
+                            <p style="text-align: justify;" class="text-gray-600">
+                                La computacion en las U.E. es el uso de recurso tecnologico y programa imformatico para apoyar el aprendizaje, desarrolar habilidades digitales y facilitar la enseñanza en el aula.
+                            </p>
+                        </div>
+                    </div>
+                     <!-- Actividad 4 -->
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/ENSAYO DE DANZA.jpeg" class="w-full h-48 object-cover" alt="CLUB DE DANZA">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">CLUB DE DANZA</h3>
+                            <p style="text-align: justify;" class="text-gray-600">
+                                Los estudiantes adquieren habilidades en diagnóstico y resolución de problemas
+                                de hardware y software, así como en el mantenimiento preventivo de equipos
+                                informáticos.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Actividad 5 -->
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/INGLES.jpeg" class="w-full h-48 object-cover" alt="CLASES DE INGLES">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">CLASES DE INGLES</h3>
+                            <p style="text-align: justify;" class="text-gray-600">
+                               Son espacios de aprendizajes destinado a desarrollar habilidades de comunicacion en este idioma, fortaleciendo la comprension, exprecion oral y escrita, ademas de ampliar las oportunidades academicas y culturales de los estudiantes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Actividad 6 -->
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/NIVELACION.jpeg" class="w-full h-48 object-cover" alt="NIVELACION DE MATEMATICAS">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">NIVELACION DE MATEMATICAS</h3>
+                            <p style="text-align: justify;" class="text-gray-600">
+                                Es un proceso de apoyo que busca reforzar y equilibrar los conocimientos basicos de los estudiantes, para que alcancen el nivel requerido y mejoren su desempeño en esta area.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLANTEL ADMINISTRATIVO 2025========== -->
+        <section id="docentes" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Plantel Administrativo 2025</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <!-- Docente 1 -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/dire.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-blue-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic.Oscar vilca </h3>
+                        <p class="text-blue-600 font-semibold">DIRECTOR</p>
+                       
+                    </div>
+                    <!-- Docente 2 -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/secretario.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-green-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic. TOño Lanzarte</h3>
+                        <p class="text-green-600 font-semibold">SECRETARIO</p>
+                        
+                    </div>
+                    <!-- Docente 3 -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/regenta.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-red-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Sra. Angela Terrazas</h3>
+                        <p class="text-red-600 font-semibold">PORTERA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- PLANTEL DOCENTES 2025 -->
+        <section id="docentes" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Plantel Docente 2025</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <!-- Docente 1 -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/sociales.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-blue-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic. Hector Aguilar M.</h3>
+                        <p class="text-blue-600 font-semibold">Ciencias Sociales</p>
+                        
+                    </div>
+                    <!-- Docente 2 -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/mate.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-green-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic. Juan Carlos Escobar</h3>
+                        <p class="text-green-600 font-semibold">Matematicas</p>
+                        <p class="text-green-600 font-semibold"3ro a 6to Sec.</p>
+                    </div>
+                    <!-- Docente 3 -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/educacion f.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-red-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic. Rene Gutierrez</h3>
+                        <p class="text-red-600 font-semibold">Educación Fisica y deporte</p>
+                        
+                    </div>
+                    <!-- Docente 4 -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/filosofia.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-orange-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic. Victor Rojas</h3>
+                        <p class="text-orange-600 font-semibold">Psicologia y filosofia</p>
+                       
+                    </div>
+                    <!-- Docente 5 (Nueva fila) -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/fisica y quimica.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-cyan-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic. Silvia Estrada</h3>
+                        <p class="text-cyan-600 font-semibold">Fisica y Quimica</p>
+                        
+                    </div>
+                    <!-- Docente 6 (Nueva fila) -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/lenguaje.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-indigo-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lic. Alicia Barrientos</h3>
+                        <p class="text-indigo-600 font-semibold">Lenguaje y comunicaciones</p>
+                       
+                    </div>
+                    <!-- Docente 7 (Nueva fila) -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/musica.jpeg" class="w-45 h-45 rounded-full mx-auto mb-4 border-4 border-rose-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold"> Lic. Maria Luisa Castillo</h3>
+                        <p class="text-rose-600 font-semibold">Educacion Musical</p>
+                        
+                    </div>
+                    <!-- Docente 8 (Nueva fila) -->
+                    
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <!-- ========== GALERÍA DE IMAGENES ========== -->
+        <section id="galeria" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Galería de Imágenes</h2>
+                </div>
+                <!-- Grid de 4 columnas para la galería -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <div>
+                        <img class="h-auto w-full max-w-full roundedduration-300 object-cover aspect-square" src="img/CARNAVAL25.jpeg" alt="Imagen de la galería 1">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/BANDA (2).jpeg" alt="Imagen de la galería 2">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/PROGRAMA 25.jpeg" alt="Imagen de la galería 3">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/cancha.jpeg" alt="Imagen de la galería 4">
+                    </div>
+                    <!-- Puedes añadir más filas de 4 imágenes aquí -->
+                     <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/CARNAVAL 24.jpeg" alt="Imagen de la galería 5">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/COMBITE.jpeg" alt="Imagen de la galería 6">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/COMPUTACION.jpeg" alt="Imagen de la galería 7">
+                    </div>
+                    <div>
+                       <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/CONVITE 25.jpeg" alt="Imagen de la galería 8">
+                    </div>
+
+                     <!-- Puedes añadir más filas de 4 imágenes aquí -->
+                     <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/DIA DE LA MADRE.jpeg" alt="Imagen de la galería 5">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/PROMO5.jpeg" alt="Imagen de la galería 6">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/EJERCICIO.jpeg" alt="Imagen de la galería 7">
+                    </div>
+                    <div>
+                       <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/ENSAYO DE DANZA.jpeg" alt="Imagen de la galería 8">
+                    </div>
+
+                     <!-- Puedes añadir más filas de 4 imágenes aquí -->
+                     <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/ENTRADA SAN FRANCISCO.jpeg" alt="Imagen de la galería 5">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/ESTANDARTE BERTA.jpeg" alt="Imagen de la galería 6">
+                    </div>
+                    <div>
+                        <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/EXPOCICION 24.jpeg" alt="Imagen de la galería 7">
+                    </div>
+                    <div>
+                       <img class="h-auto w-full max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover aspect-square" src="img/FIESTA PRE PROMO.jpeg" alt="Imagen de la galería 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- ========== UBICACIÓN ========== -->
+        <section id="ubicacion" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold section-title">Encuéntranos</h2>
+                </div>
+                <div class="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                        
+                        <!-- Dirección -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-red-600 mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Dirección</h4>
+                            <p class="text-gray-600">B/San Jose/Calle 16 de Marzo</p>
+                        </div>
+        
+                        <!-- Correo -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Correo</h4>
+                            <a href="mailto:Bthsararenda@gmail.com" class="text-blue-600 hover:underline break-all">simonbolivar25ue@gmail.com</a>
+                        </div>
+        
+                        <!-- Celular -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-4">
+                                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.61 15.35 3.48 16.84L2 22L7.32 20.55C8.77 21.34 10.38 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 9.24 20.92 6.78 19.05 4.91C17.18 3.04 14.72 2 12.04 2ZM16.57 14.45C16.31 14.91 15.35 15.44 15.04 15.53C14.73 15.62 14.34 15.66 14.01 15.5C13.68 15.34 12.81 15.04 11.76 14.08C10.45 12.91 9.73 11.5 9.58 11.24C9.43 10.98 9.28 10.77 9.46 10.6C9.64 10.43 9.82 10.24 10 10.08C10.18 9.92 10.27 9.78 10.38 9.56C10.49 9.34 10.45 9.15 10.36 9.02C10.27 8.89 9.82 7.73 9.64 7.27C9.46 6.81 9.28 6.88 9.15 6.87C9.02 6.86 8.85 6.86 8.68 6.86C8.51 6.86 8.2 6.95 7.94 7.21C7.68 7.47 7.03 8.06 7.03 9.24C7.03 10.42 7.97 11.55 8.12 11.74C8.27 11.93 9.83 14.33 12.19 15.25C14.55 16.17 14.55 15.82 14.94 15.78C15.33 15.74 16.22 15.22 16.44 14.96C16.66 14.7 16.66 14.5 16.57 14.45Z"></path></svg>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Celular</h4>
+                            <a href="https://wa.me/59175166614" target="_blank" class="text-blue-600 hover:underline">+591 73291604</a>
+                        </div>
+        
+                        <!-- Horario -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Horario de Atención</h4>
+                            <p class="text-gray-600">Lunes a Vierenes:<br>08:00 AM - 11:30 AM<br>14:00 PM - 17:00 PM</p>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p class="text-lg text-white mb-4">"EN LA CIMA DEL CONOCIMIENTO ."</p>
+            <p class="mt-4 text-sm">&copy; Copyright. Unidad Educativa - Simon Bolivar. 2025</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <!-- Reemplaza NUMERODETELEFONO con tu número de WhatsApp, incluyendo el código de país. Ej: 59173291604 -->
+    <a href="https://wa.me/59173291604?text=Hola,%20necesito%20ayuda%20con%20la%20biblioteca." class="whatsapp-flotante" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== JAVASCRIPT FOR MOBILE MENU ========== -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cierra el menú móvil al hacer clic en un enlace
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
